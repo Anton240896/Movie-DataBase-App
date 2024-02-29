@@ -410,3 +410,15 @@ export const KievTime = styled.span`
     left: 49px;
   }
 `;
+
+export const CopyRight = styled.span`
+  position: relative;
+  left: 48px;
+  bottom: 10px;
+  color: var(--tmdbRed);
+  font-family: 'Courgette';
+
+  @media (max-width: 1220px) {
+    display: none;
+  }
+`;

@@ -5,6 +5,7 @@ import ListFilms from 'components/ListFilms/ListFilms';
 import { KievTime } from 'components/Layout/Layout.styled';
 import { ContFilms, Trending, Description, Span } from 'pages/Home/Home.styled';
 import { Loader } from 'components/Loader/Loader';
+import { CopyRight } from '../../components/Layout/Layout.styled';
 
 import { requestTrending } from 'components/Api/Api';
 
@@ -48,6 +49,7 @@ const Home = () => {
       </KievTime>
 
       <ListFilms films={films} />
+      <CopyRight>Copyright © Anton Alipov</CopyRight>
 
       {loading && <Loader />}
       <Toaster position="top-right" />
