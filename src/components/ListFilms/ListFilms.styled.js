@@ -58,3 +58,8 @@ export const MovieLink = styled(Link)`
     color: #ffffff;
   }
 `;
+
+export const Img = styled.img`
+  width: 120px;
+  height: 180px;
+`;

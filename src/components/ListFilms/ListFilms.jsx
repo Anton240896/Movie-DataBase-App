@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import dayjs from 'dayjs';
-import { List, Item, MovieLink, NameFilms } from './ListFilms.styled';
+import { List, Item, MovieLink, NameFilms, Img } from './ListFilms.styled';
 
 /*   ====== DESTRUCTURIZATION  ======*/
 const defaultImg =
@@ -21,11 +21,9 @@ const ListFilms = ({ films }) => {
                 {title} (
                 {dayjs(release_date).format('DD. MM. YYYY') || 'No date found'})
               </NameFilms>
-              <img
+              <Img
                 src={poster_path ? `${posterFilms}${poster_path}` : defaultImg}
                 alt={title}
-                width="120px"
-                height="180px"
               />
             </MovieLink>
           </Item>
