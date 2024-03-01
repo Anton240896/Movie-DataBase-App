@@ -1,5 +1,7 @@
 import styled from 'styled-components';
+
 import { FaYoutube } from 'react-icons/fa';
+import { IoIosClose } from 'react-icons/io';
 import ReactModal from 'react-modal';
 
 export const OverlayModal = styled(ReactModal)`
@@ -9,13 +11,10 @@ export const OverlayModal = styled(ReactModal)`
   bottom: auto;
   left: 50%;
   margin-right: -50%;
+  margin-left: 55px;
   transform: translate(-50%, -50%);
   padding: 0%;
-  z-index: 1000;
-
-  @media (max-width: 1220px) {
-    margin-left: -136px;
-  }
+  z-index: 1;
 `;
 
 export const ContTrailer = styled.div`
@@ -29,18 +28,28 @@ export const ContTrailer = styled.div`
 `;
 
 export const Frame = styled.iframe`
-  margin-left: 520px;
+  margin-left: 420px;
   width: 50%;
   height: 500px;
   border: thick double var(--tmdbLightGreen);
   border-radius: 10px;
 
-  &:focus {
-    outline: none;
+  @media (min-width: 100px) and (max-width: 767px) {
+    margin-left: 250px;
+    width: 35%;
   }
 
-  @media (max-width: 1220px) {
-    width: 273px;
+  @media (min-width: 768px) and (max-width: 1119px) {
+    margin-left: 394px;
+    width: 40%;
+  }
+
+  @media (min-width: 1220px) {
+    margin-left: 440px;
+  }
+
+  &:focus {
+    outline: none;
   }
 `;
 
@@ -61,4 +70,11 @@ export const NoTrailer = styled.p`
     font-size: 50px;
     left: 495px;
   }
+`;
+
+export const Close = styled(IoIosClose)`
+  position: relative;
+  right: 56px;
+  bottom: 523px;
+  cursor: pointer;
 `;
