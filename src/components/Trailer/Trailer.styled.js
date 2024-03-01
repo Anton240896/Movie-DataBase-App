@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import { FaYoutube } from 'react-icons/fa';
-import { IoIosClose } from 'react-icons/io';
 import ReactModal from 'react-modal';
 
 export const OverlayModal = styled(ReactModal)`
@@ -70,11 +69,4 @@ export const NoTrailer = styled.p`
     font-size: 50px;
     left: 495px;
   }
-`;
-
-export const Close = styled(IoIosClose)`
-  position: relative;
-  right: 56px;
-  bottom: 523px;
-  cursor: pointer;
 `;

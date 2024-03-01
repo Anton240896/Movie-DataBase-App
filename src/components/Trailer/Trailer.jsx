@@ -6,7 +6,6 @@ import {
   Frame,
   BtnTrailer,
   NoTrailer,
-  Close,
 } from './Trailer.styled';
 
 import { requestTrailer } from 'components/Api/Api';
@@ -77,7 +76,6 @@ export const MovieTrailer = ({ movieId }) => {
 
       <OverlayModal isOpen={isModalOpen} onRequestClose={closeModal}>
         {trailerShow}
-        <Close size={60} />
         {loading && <Loader />}
       </OverlayModal>
     </ContTrailer>
