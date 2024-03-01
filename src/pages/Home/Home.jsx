@@ -30,6 +30,10 @@ const Home = () => {
     };
 
     getRequestTrending();
+  }, []);
+
+  /*   ====== LOCAL TIME ======*/
+  useEffect(() => {
     setInterval(() => setNowTime(new Date()));
   }, []);
 
