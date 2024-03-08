@@ -53,7 +53,7 @@ const Home = () => {
       </KievTime>
 
       <ListFilms films={films} />
-      <CopyRight>Copyright © Movie App DataBase</CopyRight>
+      <CopyRight> © Movie App DataBase</CopyRight>
 
       {loading && <Loader />}
       <Toaster position="top-right" />
