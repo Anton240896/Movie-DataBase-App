@@ -2,18 +2,14 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const Container = styled.div`
-  @media (min-width: 1219px) {
-    display: flex;
-    justify-content: center;
-    margin-right: 55px;
-  }
+  display: flex;
+  justify-content: center;
+  margin-right: 55px;
 
   @media (max-width: 1220px) {
-    display: flex;
     width: 192px;
     position: relative;
     left: 30px;
-    justify-content: center;
   }
 `;
 
