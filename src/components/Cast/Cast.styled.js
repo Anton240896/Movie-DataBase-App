@@ -45,7 +45,7 @@ export const NameActor = styled.p`
   font-family: 'Marck Script';
   padding-right: 4px;
   padding-left: 4px;
-  font-size: 45px;
+  font-size: 25px;
   font-weight: 800;
   animation: tracking-in-expand 700ms cubic-bezier(0.215, 0.61, 0.355, 1) 700ms
     both;
