@@ -63,20 +63,3 @@ const Reviews = () => {
 };
 
 export default Reviews;
-
-//        USE EFFECT "USING THEN & CATCH"
-// useEffect(() => {
-//   const getReviews = () => {
-//     setLoading(true);
-
-//     requestReviews(movieId)
-//       .then(resp => {
-//         setReviews(resp);
-//       })
-//       .catch(error => {})
-//       .finally(() => {
-//         setLoading(false);
-//       });
-//   };
-//   getReviews();
-// }, [movieId]);

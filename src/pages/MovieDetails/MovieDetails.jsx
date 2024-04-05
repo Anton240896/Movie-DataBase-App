@@ -237,21 +237,3 @@ const MovieDetails = () => {
 };
 
 export default MovieDetails;
-
-//        USE EFFECT "USING THEN & CATCH"
-// useEffect(() => {
-//   const getMovieDetailsFilms = () => {
-//     setLoading(true);
-
-//     requestMovieDetails(movieId)
-//       .then(detailMovie => {np
-//         setMovieInfo(detailMovie);
-//       })
-//       .catch(error => {})
-//       .finally(() => {
-//         setLoading(false);
-//       });
-//   };
-
-//   getMovieDetailsFilms();
-// }, [movieId]);
