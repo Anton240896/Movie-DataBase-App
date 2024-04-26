@@ -37,7 +37,7 @@ export const Layout = () => {
     const whiteTheme =
       'background-image:radial-gradient(circle, var(--tmdbShadowSwitcher) 60%, var( --tmdbBlack) 75%)';
     const blackTheme =
-      'background-image:radial-gradient(circle, var( --tmdbBlack) 70%,var(--tmdbShadowSwitcher) 75%)';
+      'background-image:radial-gradient(circle, var( --tmdbBlack) 80%,var(--tmdbShadowSwitcher) 85%)';
 
     setToggle(toggle);
     if (bodyColor === blackTheme) {

@@ -27,7 +27,7 @@ export const MovieTrailer = ({ movieId }) => {
         const data = await requestTrailer(movieId);
 
         if (data.length > 0) {
-          setTrailer(data[0].key);
+          setTrailer(data[1].key);
         }
       } catch (error) {
         console.error('Nothing found');
